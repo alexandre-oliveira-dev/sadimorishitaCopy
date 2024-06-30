@@ -14,31 +14,40 @@ export default function Navbar({ handleOpenMenu,isOpen }: NavbarProps) {
   return (
     <nav className="nav-bar">
       <Row className="box-logo">
-        <Image src="http://35.244.243.47/sm-barra_1.png"></Image>
+        <Image src="https://sadimorishita.com.br/wp-content/uploads/2023/09/sm-barra_1.png"></Image>
       </Row>
       <Row
         style={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginTop: '2rem',
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "2rem",
         }}
       >
-        <Col style={{ textAlign: 'center', color: '#fff' }}>
+        <Col style={{textAlign: "center", color: "#fff"}}>
           <Row>
-            <button onClick={() => {
-              if (isOpen) {
-                document.querySelector('.container-menu')?.classList.add('revertAnimationContainerMenu')
-                document.querySelector('.menu')?.classList.add('revertAnimationMenu')
-                document.querySelector('.box-btns')?.classList.add('revertAnimationBoxBtns')
-                setTimeout(() => {
-                  handleOpenMenu()
-                }, 900);
-                return
-              }
-              handleOpenMenu()
-            }} style={{ background: 'none', border: 0 }}>
+            <button
+              onClick={() => {
+                if (isOpen) {
+                  document
+                    .querySelector(".container-menu")
+                    ?.classList.add("revertAnimationContainerMenu");
+                  document
+                    .querySelector(".menu")
+                    ?.classList.add("revertAnimationMenu");
+                  document
+                    .querySelector(".box-btns")
+                    ?.classList.add("revertAnimationBoxBtns");
+                  setTimeout(() => {
+                    handleOpenMenu();
+                  }, 900);
+                  return;
+                }
+                handleOpenMenu();
+              }}
+              style={{background: "none", border: 0}}
+            >
               <RxHamburgerMenu size={45} color="#fff"></RxHamburgerMenu>
             </button>
           </Row>
@@ -47,14 +56,14 @@ export default function Navbar({ handleOpenMenu,isOpen }: NavbarProps) {
       </Row>
       <Row
         style={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginTop: '5rem',
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "5rem",
         }}
       >
-        <Col style={{ display: 'flex', flexDirection: 'column', gap: '27px' }}>
+        <Col style={{display: "flex", flexDirection: "column", gap: "27px"}}>
           <Row>
             <BsFacebook color="#fff" size={20}></BsFacebook>
           </Row>
@@ -69,18 +78,18 @@ export default function Navbar({ handleOpenMenu,isOpen }: NavbarProps) {
       <Row
         style={{
           width: "50px",
-          height: '50px',
+          height: "50px",
           borderRadius: "50%",
           backgroundColor: "#30BE45",
           display: "grid",
           placeItems: "center",
           position: "absolute",
           bottom: "20px",
-          transform: 'translate(-50% ,-50%)',
-          left: '50%'
+          transform: "translate(-50% ,-50%)",
+          left: "50%",
         }}
       >
-        <BsWhatsapp color='#fff' size={35}></BsWhatsapp>
+        <BsWhatsapp color="#fff" size={35}></BsWhatsapp>
       </Row>
     </nav>
   );

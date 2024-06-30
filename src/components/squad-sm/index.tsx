@@ -8,49 +8,49 @@ import { FaUser } from 'react-icons/fa'
 export default function SquadSM() {
 
     const socios = [
-        {
-            id: 1,
-            name: 'Guilherme sadi',
-            image: "http://35.244.243.47/Guilherme-Time.jpeg",
-            function: 'Sócio',
-            redes: [
-                {
-                    linkedin: "",
-                    icon: <BiLogoLinkedin color="#fff" size={30}></BiLogoLinkedin>
-
-                },
-                {
-                    email: "",
-                    icon: <IoIosMail color='#fff' size={30}></IoIosMail>
-                },
-                {
-                    moreIformations: "",
-                    icon: <FaUser color='#fff' size={30}></FaUser>
-                }
-            ]
-        },
-        {
-            id: 2,
-            name: 'Mauricio morishita',
-            image: "http://35.244.243.47/Mauricio-time-1.jpg",
-            function: 'Sócio',
-            redes: [
-                {
-                    linkedin: "",
-                    icon: <BiLogoLinkedin color="#fff" size={30}></BiLogoLinkedin>
-
-                },
-                {
-                    email: "",
-                    icon: <IoIosMail color='#fff' size={30}></IoIosMail>
-                },
-                {
-                    moreIformations: "",
-                    icon: <FaUser color='#fff' size={30}></FaUser>
-                }
-            ]
-        }
-    ]
+      {
+        id: 1,
+        name: "Guilherme sadi",
+        image:
+          "https://sadimorishita.com.br/wp-content/uploads/2023/08/Guilherme-Time.jpeg",
+        function: "Sócio",
+        redes: [
+          {
+            linkedin: "",
+            icon: <BiLogoLinkedin color="#fff" size={30}></BiLogoLinkedin>,
+          },
+          {
+            email: "",
+            icon: <IoIosMail color="#fff" size={30}></IoIosMail>,
+          },
+          {
+            moreIformations: "",
+            icon: <FaUser color="#fff" size={30}></FaUser>,
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Mauricio morishita",
+        image:
+          "https://sadimorishita.com.br/wp-content/uploads/2023/08/Mauricio-time-1.jpg",
+        function: "Sócio",
+        redes: [
+          {
+            linkedin: "",
+            icon: <BiLogoLinkedin color="#fff" size={30}></BiLogoLinkedin>,
+          },
+          {
+            email: "",
+            icon: <IoIosMail color="#fff" size={30}></IoIosMail>,
+          },
+          {
+            moreIformations: "",
+            icon: <FaUser color="#fff" size={30}></FaUser>,
+          },
+        ],
+      },
+    ];
 
 
     return (
